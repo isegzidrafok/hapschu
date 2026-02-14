@@ -8,10 +8,13 @@
       body{
         background: black;
         position: relative;
+        font-family: arial;
       }
-      #tahta{}
-      .siyah{}
-      .beyaz{}
+      #tahta{
+        position: absolute;
+        border: 0 solid black;
+        top: 5px;
+      }
     </style>
   </head>
   <body>
@@ -27,6 +30,7 @@
         tahta.style.width = (window.innerHeight / 2) + "px";
         tahta.style.height = tahta.style.width;
       }
+      tahta.style.left = ((window.innerWidth/2)-(tahta.getBoundingClientRect().width/2))+"px";
       while(satir <= 8 && sutun <= 8){
         if((sutun + satir) % 2 === 0){
           const x = document.createElement("div");
