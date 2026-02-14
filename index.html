@@ -1,4 +1,40 @@
 <!DOCTYPE html>
-  <html>
-
-  </html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Süleyman</title>
+    <style>
+      body{
+        background: black;
+        position: relative;
+      }
+      #tahta{}
+      .siyah{}
+      .beyaz{}
+    </style>
+  </head>
+  <body>
+<div id="tahta"></div>
+    <script>
+      const tahta = document.getElementById("tahta");
+      let sutun = 1;
+      let satir = 1;
+      if(window.innerHeight > window.innerWidth){
+        tahta.style.width = (window.innerWidth / 2) + "px";
+        tahta.style.height = tahta.style.width;
+      }else{
+        tahta.style.width = (window.innerHeight / 2) + "px";
+        tahta.style.height = tahta.style.width;
+      }
+      while(satir <= 8 && sutun <= 8){
+        if((sutun + satir) % 2 === 0){
+          const x = document.createElement("div");
+          
+        }else{
+          
+        }
+      }
+    </script>
+  </body>
+</html>
